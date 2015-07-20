@@ -1,7 +1,8 @@
-# chat-example
+Requirments:-
+1.Node.js
+2.socket.io
 
-This is the source code for a very simple chat example used for 
-the [Getting Started](http://socket.io/get-started/chat/) guide 
-of the Socket.IO website.
+Steps:-
+1.Runs node.js server
+2.Open browser with http://127.0.0.1:8081/
 
-Please refer to it to learn how to run this application.
