@@ -28,18 +28,19 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res){
   res.render('home.jade');
 });
-//server.listen(appPort);
+
 //app.listen(appPort);
 // get the app environment from Cloud Foundry
 console.log("i am running  before cfenv");
 var appEnv = cfenv.getAppEnv();
+server.listen(appEnv.port);
 console.log("i am running  after cfenv");
 // start server on the specified port and binding host
-app.listen(appEnv.port, '0.0.0.0', function() {
-  // print a message when the server starts listening
-  console.log("server starting on " + appEnv.url);
-});
-console.log("Server listening on port " + appPort);
+// app.listen(appEnv.port, '0.0.0.0', function() {
+//   // print a message when the server starts listening
+//   console.log("server starting on " + appEnv.url);
+// });
+// console.log("Server listening on port " + appPort);
 
 // Handle the socket.io connections
 
