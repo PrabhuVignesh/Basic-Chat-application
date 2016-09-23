@@ -5,7 +5,8 @@ var appPort = 3000;
 // Librairies
 
 var express = require('express'), app = express();
-var http = require('http')
+var http = require('http'),
+	cfenv = require('cfenv')
   , server = http.createServer(app)
   , io = require('socket.io').listen(server);
 
