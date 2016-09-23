@@ -8,7 +8,7 @@ var express = require('express'), app = express();
 var http = require('http'),
 	cfenv = require('cfenv')
   , server = http.createServer(app)
-  , io = require('socket.io').listen(server);
+  , io = require('socket.io')(server);
 
 
 var jade = require('jade');
