@@ -5,7 +5,8 @@
   "dependencies": {
   	"socket.io": "*",
   	"express": "*",
-  	"jade": "*"
+  	"jade": "*",
+    "cfenv": "1.0.x"
   	  },
   "scripts": {
   	"start": "node app.js"
